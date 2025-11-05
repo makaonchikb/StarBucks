@@ -239,20 +239,148 @@ body{
 }
 }
 .delicious{
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 136px;
+    }
     &__img-wrapper{
+        position: relative;
         max-width: 465px;
         width: 100%;
-        max-height: 100%;
         height: 100%;
-        aspect-ratio: 1/1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
         
     }
+    &__img-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    max-height: 166.5px;
+    max-width: 166.5px;
+    height: 100%;
+    width: 100%;
+    top: 10px;      
+    right: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__star-text{
+        position: absolute;
+        z-index: 3;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 38.8px;
+        max-width: 116.5px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        line-height: 86.5%;
+    }
+    &__star{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
     &__img{
+        position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: relative;
+        z-index: 1;
+        box-shadow: -14px 26px 65px rgba(0, 0, 0, 0.39);
+    }
+    
+    &__img-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        right: 45px;
+        top: 36px;
+        
+    }
+    &__we-make{
+        max-width: 457px;
+        width: 100%;
+    }
+    &__header{
+        font-weight: 800;
+        font-size: 80px;
+        letter-spacing: -0.03em;
+        line-height: 109.47%;
+        color: $white;
+        max-width: 411px;
+        margin-bottom: 63px;
+    }
+    &__header-span{
+            background: $starbucksGradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        }
+    &__text{
+        
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.47%;
+        letter-spacing: -0.02em;
+        color: $smallTextColor;
+        margin-bottom: 63px;
+    }
+    &__img-button{
+        display: flex;
+        position: relative;
+        max-width: 447px;
+        max-height: 275px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+    }
+    &__make-img{
+        position: relative;
+        z-index: 0;
+        object-fit: cover;
+    }
+    &__button{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+        background: $starbucksGradient;
+        position: absolute;
+        border-radius: 82.83px;
+        border: none;
+        padding: 20px 43px;
+        font-weight: 639;
+        font-size: 24px;
+        line-height: 146.47%;
+        letter-spacing: -0.02em;
+        color: $white;
+        &:hover{
+            background: $sratbucksGradientActive;
+        }
+        &:active{
+            background: $starbucksGradient;
+        }
     }
 }
+
+
 
 
 
