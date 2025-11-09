@@ -1,28 +1,30 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
+
 $bgColor: #121517;
-$starbucksGradient: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%); 
-$sratbucksGradientActive: linear-gradient(263.46deg, #15412a 12.14%, #298c4d 87.2%); 
-$smallTextColor:#D9D9D9;
+$starbucksGradient: linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%);
+$sratbucksGradientActive: linear-gradient(263.46deg, #15412a 12.14%, #298c4d 87.2%);
+$smallTextColor: #D9D9D9;
 $white: #fff;
 $fontMonserrat: "Montserrat", sans-serif;
-body{
+
+body {
     background-color: $bgColor;
     font-family: "Montserrat", sans-serif;
 }
-.container{
-        margin: 0 auto;
-        padding: 0 130px;
-        max-width: 1500px;
-    }
 
-.first-page{
-    
-    &__big-link{
+.container {
+    margin: 0 auto;
+    padding: 0 130px;
+    max-width: 1500px;
+}
+
+.first-page {
+
+    &__big-link {
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
@@ -33,15 +35,17 @@ body{
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
-        &:hover{
+
+        &:hover {
             background: $sratbucksGradientActive;
             -webkit-background-clip: text;
             background-clip: text;
-             -webkit-text-fill-color: transparent;
-             color: transparent;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
         }
     }
-    &__nav-wrapper{
+
+    &__nav-wrapper {
         margin-top: 48px;
         display: flex;
         flex-direction: row;
@@ -49,11 +53,12 @@ body{
         gap: 94px;
         margin-bottom: 67px;
     }
-    
-    &__navigation{
+
+    &__navigation {
         margin: auto 0;
     }
-    &__link{
+
+    &__link {
         text-decoration: none;
         color: #fff;
         font-family: "Montserrat", sans-serif;
@@ -63,18 +68,21 @@ body{
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         line-height: 23px;
     }
-    &__info-wrapper{
+
+    &__info-wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1200px;
         width: 100%;
         margin-bottom: 120px;
     }
-    &__text-wrapper{
+
+    &__text-wrapper {
         max-width: 570px;
         width: 100%;
     }
-    &__header{
+
+    &__header {
         font-weight: 800;
         font-size: 80px;
         color: $white;
@@ -82,14 +90,16 @@ body{
         width: 100%;
         margin-bottom: 54px;
     }
-    &__header-span{
+
+    &__header-span {
         background: $starbucksGradient;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
     }
-    &__text{
+
+    &__text {
         font-weight: 400;
         font-size: 20px;
         color: $smallTextColor;
@@ -99,18 +109,21 @@ body{
         width: 100%;
         margin-bottom: 54px;
     }
-    &__buttons{
+
+    &__buttons {
         display: flex;
         flex-direction: row;
         gap: 17px;
-        max-width: 570px;   
+        max-width: 570px;
         width: 100%;
     }
-    &__button{
+
+    &__button {
         border-radius: 82.834px;
         cursor: pointer;
         margin-bottom: 54px;
-        &--select{
+
+        &--select {
             background: $starbucksGradient;
             border: none;
             padding: 20px 79px;
@@ -118,133 +131,152 @@ body{
             font-weight: 639;
             font-family: $fontMonserrat;
             color: $white;
-            &:hover{
+
+            &:hover {
                 background: $sratbucksGradientActive;
             }
-            &:active{
+
+            &:active {
                 background: $starbucksGradient;
             }
         }
-        &--more{
+
+        &--more {
             background-color: #121517;
             padding: 20px 54px;
             font-family: $fontMonserrat;
             font-size: 24px;
             font-weight: 400;
             color: $smallTextColor;
-            &:hover{
+
+            &:hover {
                 background: #090a0b;
             }
-            &:active{
+
+            &:active {
                 background: #121517;
             }
         }
-        
-        
-    }
-&__image-wrapper{
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-        }
-&__img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
-&__customers{
-    display: flex;
-    flex-direction: row;
-    gap: 46px;
-}
-&__count{
+
+    }
+
+    &__image-wrapper {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__customers {
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
+    }
+
+    &__count {
         color: $white;
         font-weight: 400;
         font-size: 62px;
-}
-&__count-span{
-    background: $starbucksGradient;
+    }
+
+    &__count-span {
+        background: $starbucksGradient;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
-}
-&__achivment{
-    color: $smallTextColor;
-    letter-spacing: -0.02em;
-    line-height: 29px;
-    font-size: 20px;
-    font-weight: 400;
-    max-width: 123px;
-}
-&__panels{
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%);;
-    max-width: 1029px;
-    width: 100%;
-    border-radius: 46px;
-    padding: 54px 82px;
-    margin: 0 auto;
-    
-}
-&__panel{
-    align-items: center;
-    text-align: center;
+    }
+
+    &__achivment {
+        color: $smallTextColor;
+        letter-spacing: -0.02em;
+        line-height: 29px;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 123px;
+    }
+
+    &__panels {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%);
+        ;
+        max-width: 1029px;
+        width: 100%;
+        border-radius: 46px;
+        padding: 54px 82px;
+        margin: 0 auto;
+
+    }
+
+    &__panel {
+        align-items: center;
+        text-align: center;
+    }
+
+    &__panel-img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    &__circle {
+        display: inline-block;
+        margin: 0 auto;
+        width: 148px;
+        height: 148px;
+        background: $starbucksGradient;
+        border-radius: 50%;
+        z-index: 0;
+        box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.39);
+    }
+
+    &__panel-name {
+        font-weight: 500;
+        font-size: 32px;
+        letter-spacing: -0.02em;
+        line-height: 52px;
+        color: $bgColor;
+    }
+
+    &__panel-info {
+        max-width: 202px;
+        letter-spacing: -0.02em;
+        font-weight: 400;
+        font-size: 20.1334px;
+        line-height: 33px;
+        color: $bgColor;
+        opacity: 90%;
+    }
+
+    & .container {
+        margin-bottom: 100px;
+    }
 }
 
-&__panel-img{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-      position: absolute;
-      z-index: 1;
-    }
-    }
-    
-&__circle{
-    display: inline-block;
-    margin: 0 auto;
-    width: 148px;      
-    height: 148px;
-    background: $starbucksGradient;
-    border-radius: 50%;
-    z-index: 0;
-    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.39);
-}
-&__panel-name{
-    font-weight: 500;
-    font-size: 32px;
-    letter-spacing: -0.02em;
-    line-height: 52px;
-    color: $bgColor;
-}
-&__panel-info{
-    max-width: 202px;
-    letter-spacing: -0.02em;
-    font-weight: 400;
-    font-size: 20.1334px;
-    line-height: 33px;
-    color: $bgColor;
-    opacity: 90%;
-}
-& .container{
-    margin-bottom: 100px;
-}
-}
-.delicious{
-    & .container{
+.delicious {
+    & .container {
         display: flex;
         justify-content: space-between;
         margin-bottom: 136px;
     }
-    &__img-wrapper{
+
+    &__img-wrapper {
         position: relative;
         max-width: 465px;
         width: 100%;
@@ -252,24 +284,26 @@ body{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        
-        
+
+
     }
-    &__img-star{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    max-height: 166.5px;
-    max-width: 166.5px;
-    height: 100%;
-    width: 100%;
-    top: 10px;      
-    right: 10px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &__img-star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        max-height: 166.5px;
+        max-width: 166.5px;
+        height: 100%;
+        width: 100%;
+        top: 10px;
+        right: 10px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
-    &__star-text{
+
+    &__star-text {
         position: absolute;
         z-index: 3;
         color: $white;
@@ -282,13 +316,15 @@ body{
         font-weight: 500;
         line-height: 86.5%;
     }
-    &__star{
+
+    &__star {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
-    &__img{
+
+    &__img {
         position: relative;
         width: 100%;
         height: 100%;
@@ -297,8 +333,8 @@ body{
         z-index: 1;
         box-shadow: -14px 26px 65px rgba(0, 0, 0, 0.39);
     }
-    
-    &__img-bg{
+
+    &__img-bg {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -306,13 +342,15 @@ body{
         z-index: 0;
         right: 45px;
         top: 36px;
-        
+
     }
-    &__we-make{
+
+    &__we-make {
         max-width: 457px;
         width: 100%;
     }
-    &__header{
+
+    &__header {
         font-weight: 800;
         font-size: 80px;
         letter-spacing: -0.03em;
@@ -321,15 +359,17 @@ body{
         max-width: 411px;
         margin-bottom: 63px;
     }
-    &__header-span{
-            background: $starbucksGradient;
+
+    &__header-span {
+        background: $starbucksGradient;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
-        }
-    &__text{
-        
+    }
+
+    &__text {
+
         font-weight: 400;
         font-size: 20px;
         line-height: 163.47%;
@@ -337,7 +377,8 @@ body{
         color: $smallTextColor;
         margin-bottom: 63px;
     }
-    &__img-button{
+
+    &__img-button {
         display: flex;
         position: relative;
         max-width: 447px;
@@ -350,12 +391,14 @@ body{
         align-items: center;
         justify-content: center;
     }
-    &__make-img{
+
+    &__make-img {
         position: relative;
         z-index: 0;
         object-fit: cover;
     }
-    &__button{
+
+    &__button {
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -371,32 +414,206 @@ body{
         line-height: 146.47%;
         letter-spacing: -0.02em;
         color: $white;
-        &:hover{
+
+        &:hover {
             background: $sratbucksGradientActive;
         }
-        &:active{
+
+        &:active {
             background: $starbucksGradient;
         }
     }
 }
 
+.products {
+    & .container {}
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 72px;
+        align-items: center;
+        margin-bottom: 54px;
+    }
+
+    &__header {
+        max-width: 392px;
+        width: 100%;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 109.47%;
+        letter-spacing: -0.03em;
+        color: $white;
+        text-transform: capitalize;
+
+        & span {
+            background: $starbucksGradient;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.47%;
+        color: $smallTextColor;
+        letter-spacing: -0.02em;
+        max-width: 444px;
+        width: 100%;
+    }
+
+    &__panels {
+
+        display: flex;
+        flex-direction: row;
+        gap: 54px;
+        align-items: center;
+    }
+
+    &__panel {
+        padding: 54px 30px 33px 31px;
+        max-width: 277px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 29px;
+        background: $bgColor;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            border-radius: 29px;
+            background: linear-gradient(263.46deg, #a1a1a1 3.14%, #575757 87.2%);
+            z-index: -1;
+        }
+
+        &:hover {
+            &::before {
+                background: $starbucksGradient;
+            }
+        }
+    }
+
+    &__arrow {
+        & svg:hover {
+            fill: rgba(39, 202, 102, 0.10)
+        }
+    }
 
 
+    &__panel-info {}
 
+    &__panel-header {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 163.47%;
+        letter-spacing: -0.02em;
+        color: $white;
+        text-align: center;
+        margin-bottom: 18px;
+    }
 
+    &__panel-text {
+        font-weight: 400;
+        font-size: 20.1334px;
+        line-height: 163.47%;
+        color: $smallTextColor;
+        text-align: center;
+        letter-spacing: -0.02em;
+        max-width: 216px;
+        width: 100%;
+        margin-bottom: 7px;
+    }
 
+    &__panel-cost-ml {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 183px;
+        width: 100%;
+        align-items: last baseline;
+        margin-bottom: 30px;
+    }
 
+    &__cost {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 163.47%;
+        color: $white;
+        letter-spacing: -0.02em;
+    }
 
+    &__ml {
+        font-weight: 400;
+        font-size: 20.1334px;
+        line-height: 163.47%;
+        color: $smallTextColor;
+        letter-spacing: -0.02em;
+    }
 
+    &__panel-button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 59.72px;
+        padding: 15px 39px;
+        border: none;
+        background: $starbucksGradient;
+        font-weight: 639;
+        font-size: 17.3023px;
+        line-height: 146.47%;
+        letter-spacing: -0.02em;
+        color: $white;
+        margin-bottom: 33px;
+        text-transform: capitalize;
 
+        &:hover {
+            background: $sratbucksGradientActive;
+        }
 
+        &:active {
+            background: $starbucksGradient;
+        }
+    }
 
+    &__img-wrapper {
+        position: relative;
+        max-width: 180px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-
-
-
-
-    
-
-
-
+        & img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__circle{
+        position: absolute;
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 186px;
+        width: 100%;
+        background: $starbucksGradient;
+        border-radius: 50%;
+        z-index: 0;
+        box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.39);
+        aspect-ratio: 1 / 1;
+        }
+}
